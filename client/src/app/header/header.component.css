@@ -1,0 +1,12 @@
+header {
+    text-align: center;
+    font-size: min(1vw, 15px);
+}
+img {
+    max-width: 50%;
+    max-block-size: 50%;
+}
+
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
