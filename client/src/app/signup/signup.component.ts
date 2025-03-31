@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import {
   FormControl,
   FormGroup,
@@ -7,6 +7,8 @@ import {
 } from '@angular/forms';
 
 import { RouterLink } from '@angular/router';
+import { SignupService } from './signup-service/signup.service';
+import { User } from '../models/models';
 
 @Component({
   selector: 'app-signup',
@@ -16,17 +18,19 @@ import { RouterLink } from '@angular/router';
   styleUrl: './signup.component.css',
 })
 export class SignupComponent {
+
+  signupService = inject(SignupService)
   form = new FormGroup({
-    firstName: new FormControl('', {
+    firstName: new FormControl<string>('', {
       validators: [Validators.required],
     }),
-    lastName: new FormControl('', {
+    lastName: new FormControl<string>('', {
       validators: [Validators.required],
     }),
-    email: new FormControl('', {
+    email: new FormControl<string>('', {
       validators: [Validators.required, Validators.email],
     }),
-    password: new FormControl('', {
+    password: new FormControl<string>('', {
       validators: [
         Validators.required,
         Validators.min(8),
@@ -67,5 +71,14 @@ export class SignupComponent {
 
   onSubmit(): void {
     console.log(this.form);
+
+    let user: User = {
+      firstName : this.form.controls.firstName.value?? '',
+      lastName : this.form.controls.lastName.value??  '',
+      email: this.form.controls.email.value ?? '',
+      password: this.form.controls.password.value ?? ''
+    }
+
+    this.signupService.signUp(user)
   }
 }

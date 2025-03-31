@@ -10,7 +10,7 @@ public class User {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
-        this.password = password
+        this.password = password;
     }
 
     
@@ -19,10 +19,17 @@ public class User {
     }
 
     public String getName (){
-        return (this.firstName + this.lastname);
+        return (this.firstName + this.lastName);
     }
 
     public String getEmail(){
         return this.email;
+    }
+    public void setPassword(String newPass){
+        this.password = newPass;
+    }
+
+    public String getPassword(){
+        return this.password;
     }
 }

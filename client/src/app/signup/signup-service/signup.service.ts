@@ -4,8 +4,12 @@ import { User } from '../../models/models';
 
 @Injectable({ providedIn: 'root' })
 export class SignupService {
-  httpClient = inject(HttpClient);
+  private httpClient = inject(HttpClient);
   public signUp(user: User) {
-    this.httpClient.post('http://localhost:8080/api/signup', user);
+    console.log('hello?')
+    this.httpClient.post('http://localhost:8080/api/signup', user).subscribe({
+      next: (res) => console.log('Received ', res),
+      error: (err) => console.log('oops, received an error', err) 
+    });
   }
 }
