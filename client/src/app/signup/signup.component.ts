@@ -7,7 +7,7 @@ import {
 } from '@angular/forms';
 
 import { RouterLink } from '@angular/router';
-import { SignupService } from './signup-service/signup.service';
+import { AuthService } from '../auth-service/auth.service';
 import { User } from '../models/models';
 
 @Component({
@@ -19,7 +19,7 @@ import { User } from '../models/models';
 })
 export class SignupComponent {
 
-  signupService = inject(SignupService)
+  authService = inject(AuthService)
   form = new FormGroup({
     firstName: new FormControl<string>('', {
       validators: [Validators.required],
@@ -79,6 +79,6 @@ export class SignupComponent {
       password: this.form.controls.password.value ?? ''
     }
 
-    this.signupService.signUp(user)
+    this.authService.signUp(user)
   }
 }
