@@ -2,7 +2,7 @@
   display: grid;
   border-style: solid;
   width: min(50vw, 400px);
-  height: max(300px, 70vh);
+  height: max(300px, 35vh);
   background-color: white;
   border-color: rgb(213, 203, 203);
   border-radius: 30px;
@@ -14,6 +14,7 @@
 h1 {
   text-align: center;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: min(6vw,1.5em);
 }
 
 section {
@@ -26,20 +27,7 @@ input {
   background-color: #dfe1e3;
   border-radius: 5px;
   padding: 5px;
-}
-
-button {
-  border-radius: 10px;
-  background-color: rgb(39, 153, 130);
-  color: rgb(37, 32, 32);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: large;
-  font-weight: bold;
-  padding: 5px;
-}
-
-button:hover {
-  background-color: rgb(23, 222, 182);
+  width:95%
 }
 
 hr {

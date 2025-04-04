@@ -53,13 +53,16 @@
         <li>Contain numbers</li>
       </ul>
       } @if(confirmPassInvalid){
-      <p>Confirm Password Invalid or Does Not Match</p>
+      <p>Confirm password does not match password</p>
+
       }
     </div>
     }
 
     <section>
-      <button type="submit">Create Account</button>
+      <button type="submit" [disabled]="form.invalid || form.pending">
+        Create Account
+      </button>
     </section>
     <div class="link">
       <hr />

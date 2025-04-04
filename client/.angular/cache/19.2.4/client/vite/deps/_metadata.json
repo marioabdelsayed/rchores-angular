@@ -1,55 +1,55 @@
 {
-  "hash": "3391d389",
-  "configHash": "58fe4e1a",
+  "hash": "c8bcce4f",
+  "configHash": "d29b60db",
   "lockfileHash": "bf1bb688",
-  "browserHash": "43580c90",
+  "browserHash": "c888d3de",
   "optimized": {
+    "@angular/common/http": {
+      "src": "../../../../../../node_modules/@angular/common/fesm2022/http.mjs",
+      "file": "@angular_common_http.js",
+      "fileHash": "8c9a40c0",
+      "needsInterop": false
+    },
     "@angular/core": {
       "src": "../../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-      "fileHash": "9779d130",
+      "fileHash": "8dcdee2f",
       "needsInterop": false
     },
     "@angular/forms": {
       "src": "../../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
       "file": "@angular_forms.js",
-      "fileHash": "50e33171",
+      "fileHash": "130e3962",
       "needsInterop": false
     },
     "@angular/platform-browser": {
       "src": "../../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
       "file": "@angular_platform-browser.js",
-      "fileHash": "fb652862",
+      "fileHash": "47296a93",
       "needsInterop": false
     },
     "@angular/router": {
       "src": "../../../../../../node_modules/@angular/router/fesm2022/router.mjs",
       "file": "@angular_router.js",
-      "fileHash": "2c68b72f",
+      "fileHash": "bcb27898",
       "needsInterop": false
     },
     "primeng/api": {
       "src": "../../../../../../node_modules/primeng/fesm2022/primeng-api.mjs",
       "file": "primeng_api.js",
-      "fileHash": "b28f39a3",
+      "fileHash": "e8729d3c",
       "needsInterop": false
     },
     "primeng/button": {
       "src": "../../../../../../node_modules/primeng/fesm2022/primeng-button.mjs",
       "file": "primeng_button.js",
-      "fileHash": "7549efe1",
+      "fileHash": "5aa983a4",
       "needsInterop": false
     },
     "primeng/password": {
       "src": "../../../../../../node_modules/primeng/fesm2022/primeng-password.mjs",
       "file": "primeng_password.js",
-      "fileHash": "e6188b02",
-      "needsInterop": false
-    },
-    "@angular/common/http": {
-      "src": "../../../../../../node_modules/@angular/common/fesm2022/http.mjs",
-      "file": "@angular_common_http.js",
-      "fileHash": "12f49e86",
+      "fileHash": "82282d9e",
       "needsInterop": false
     }
   },
@@ -60,14 +60,14 @@
     "chunk-57C4MINZ": {
       "file": "chunk-57C4MINZ.js"
     },
-    "chunk-XFVPWCHB": {
-      "file": "chunk-XFVPWCHB.js"
-    },
     "chunk-6VVK736D": {
       "file": "chunk-6VVK736D.js"
     },
     "chunk-HQHIXLIP": {
       "file": "chunk-HQHIXLIP.js"
+    },
+    "chunk-XFVPWCHB": {
+      "file": "chunk-XFVPWCHB.js"
     },
     "chunk-XKL22ZH2": {
       "file": "chunk-XKL22ZH2.js"

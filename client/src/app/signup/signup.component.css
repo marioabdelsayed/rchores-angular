@@ -27,9 +27,11 @@ section {
 }
 h1 {
   text-align: center;
+  font-size: min(6vw,1.5em);
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 button {
+  transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;
   border-radius: 10px;
   background-color: rgb(39, 153, 130);
   color: rgb(37, 32, 32);
@@ -38,7 +40,14 @@ button {
   font-weight: bold;
   padding: 5px;
 }
-button:hover {
+
+button[disabled] {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+button:not([disabled]):hover {
   background-color: rgb(23, 222, 182);
 }
 

@@ -1,8 +1,4 @@
 import {
-  NG_VALUE_ACCESSOR,
-  NgModel
-} from "./chunk-XFVPWCHB.js";
-import {
   AutoFocus,
   BaseComponent,
   BaseStyle,
@@ -26,6 +22,10 @@ import {
   relativePosition,
   removeClass
 } from "./chunk-HQHIXLIP.js";
+import {
+  NG_VALUE_ACCESSOR,
+  NgModel
+} from "./chunk-XFVPWCHB.js";
 import {
   CommonModule,
   DOCUMENT,
