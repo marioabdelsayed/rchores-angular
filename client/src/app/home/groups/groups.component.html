@@ -1,0 +1,10 @@
+<ul>
+  @for (place of groups; track place.id) {
+  <li class="group-item">
+    <button>
+      <img src="african-savanna.jpg" [alt]="place.name" />
+      <h3>{{ place.name }}</h3>
+    </button>
+  </li>
+  }
+</ul>

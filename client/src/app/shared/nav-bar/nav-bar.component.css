@@ -1,0 +1,47 @@
+.header {
+  display: flex;
+  width: 70%;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.home {
+  width: min(600vw,95px);
+  height: min(15vh,35px);
+}
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+  border-radius: 8px;
+  border: 2px solid;
+  border-color: rgb(213, 203, 203);
+  background-color: rgb(243, 240, 240);
+  max-width: 85rem;
+  margin: 0.5rem auto;
+  padding: 1rem;
+  color: #fff;
+  display: flex;
+  padding: 0 16px;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+  font: 500 20px/32px Roboto, "Helvetica Neue", sans-serif;
+}
+.buttons{
+  width: min(600vw,95px);
+  height: min(15vh,35px);
+  justify-content:space-evenly;
+  display: flex;
+
+}
+
+input {
+  width:60%;
+  border-radius: 10px;
+  padding: 5px;
+  border-style: solid;
+  border-color: rgb(217, 206, 206)
+}
+

@@ -1,0 +1,21 @@
+section {
+  max-width: 85rem;
+  margin: 0.5rem auto;
+  padding: 1rem;
+  border: 2px solid;
+  border-radius: 8px;
+  background-color: rgb(243, 240, 240);
+  border-color: rgb(213, 203, 203);
+}
+
+
+section h2 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1rem;
+  color: #000000;
+  padding-left: 10px;
+  text-align: left;
+}
