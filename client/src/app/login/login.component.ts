@@ -1,13 +1,15 @@
-import { Component, OnInit } from '@angular/core';
-import { Router, RouterLink } from '@angular/router';
+import { Component, inject, OnInit } from '@angular/core';
+import { RouterLink } from '@angular/router';
+import { LoginRequest } from '../models/loginRequest';
 import { ButtonModule } from 'primeng/button';
 import { PasswordModule } from 'primeng/password';
 import {
-  FormBuilder,
+  FormControl,
   FormGroup,
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
+import { AuthService } from '../auth-service/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -15,18 +17,19 @@ import {
   templateUrl: './login.component.html',
   styleUrl: './login.component.css',
 })
-export class LoginComponent implements OnInit {
-  form!: FormGroup;
-  constructor(private fb: FormBuilder) {}
+export class LoginComponent {
+  private authService = inject(AuthService);
 
-  ngOnInit(): void {
-    this.form = this.fb.group({
-      username: ['', [Validators.required, Validators.email]],
-      password: ['', Validators.required],
+    form = new FormGroup({
+      email: new FormControl<string> ('', [Validators.required, Validators.email]),
+      password: new FormControl<string>('', [Validators.required]),
     });
-  }
 
   onSubmit(): void {
-    console.log(this.form);
+    let loginRequest : LoginRequest = {
+      email: this.form.controls.email.value ?? '', 
+      password: this.form.controls.password.value ?? ''
+    }
+    this.authService.login(loginRequest);
   }
 }

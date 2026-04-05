@@ -9,7 +9,7 @@ export class AuthService {
   public signUp(user: User) {
     console.log('hello?')
     this.httpClient.post('http://localhost:8080/api/auth/signup', user).subscribe({
-      next: (res) => console.log('Received ', res),
+      next: (res) => console.log('Signup Successful ', res),
       error: (err) => console.log('oops, received an error', err) 
     });
   }
@@ -18,7 +18,7 @@ export class AuthService {
   public login(request: LoginRequest){
     console.log("Login");
     this.httpClient.post('http://localhost:8080/api/auth/login', request).subscribe({
-      next: (res) => console.log('Received ', res),
+      next: (res) => console.log('Login Succssful ', res),
       error: (err) => console.log('oops, received an error', err) 
     });
 
